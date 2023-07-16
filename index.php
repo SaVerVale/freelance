@@ -18,7 +18,7 @@ if (isset($_SESSION["Username"])) {
 <html>
 
 <head>
-	<title>Freelance Sharmaineee</title>
+	<title>Freelance Marketplace</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
