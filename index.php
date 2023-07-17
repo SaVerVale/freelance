@@ -125,7 +125,7 @@ if (isset($_SESSION["Username"])) {
 				<div class="container text-center">
 					<h2>Small Scale Job Marketplace</h2>
 					<img src="image/ssjmlogo.png" width="188.16" height="151.68">
-					<p>Unlock a world of local opportunities and take your career to new heights with our Small Scale Job Marketplace, connecting job seekers and freelancers with the best local opportunities for success</p>
+					<p style="text-align: justify;">Unlock a world of local opportunities and take your career to new heights with our Small Scale Job Marketplace, connecting job seekers and freelancers with the best local opportunities for success</p>
 					<a href="loginReg.php" class="btn btn-warning btn-lg">It's Free!! Join Now!!!</a>
 					<p></p>
 					<div class="btn-group">
