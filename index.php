@@ -58,7 +58,7 @@ if (isset($_SESSION["Username"])) {
 <body>
 
 	<!--Navbar menu-->
-	<nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+	<nav class="navbar navbar-fixed-top" id="my-navbar" style="background-color: #7C9D96;">
 		<div class="container">
 			<div class="navber-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
@@ -67,15 +67,15 @@ if (isset($_SESSION["Username"])) {
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<img src="image/ssjmlogo.png" class="navbar-brand"> <a href="index.php" class="navbar-brand"> Small Scale Job Marketplace</a>
+				<img src="image/ssjmlogo.png" class="navbar-brand"> <a href="index.php" class="navbar-brand" style="color: #F4F2DE;"> Small Scale Job Marketplace</a>
 			</div>
 			<div class="collapse navbar-collapse" id="navbar-collapse">
 				<a href="loginReg.php" class="btn btn-info navbar-btn navbar-right">Register</a>
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="index.php">Home</a></li>
-					<li><a href="#how">How it works</a></li>
-					<li><a href="#faq">FAQ</a></li>
-					<li><a href="loginReg.php">Login</a></li>
+					<li><a href="index.php" style="color: #F4F2DE;">Home</a></li>
+					<li><a href="#how" style="color: #F4F2DE;">How it works</a></li>
+					<li><a href="#faq" style="color: #F4F2DE;">FAQ</a></li>
+					<li><a href="loginReg.php" style="color: #F4F2DE;">Login</a></li>
 				</ul>
 			</div>
 		</div>
@@ -260,27 +260,29 @@ if (isset($_SESSION["Username"])) {
 	<div class="container text-center" style="padding:4%;" id="category">
 		<h1 class="card header2" style="background:#7C9D96">Popular Categories</h1>
 		<div class="row">
+
 			<div class="col-lg-4">
 				<div class="card" style="padding:20px 40px 20px 40px;margin:20px;">
 					<a href="loginReg.php"><span class="glyphicon glyphicon-credit-card"></span>
-						<h3>Web Developer</h3>
-						<p>Please login and browse our web developers</p>
+						<h3 style="color: #E9B384;"> Web Developer</h3>
+						<p style="color: #E9B384;">Please login and browse our web developers</p>
 					</a>
 				</div>
+
 			</div>
 			<div class="col-lg-4">
 				<div class="card" style="padding:20px 40px 20px 40px;margin:20px;">
 					<a href="loginReg.php"><span class="glyphicon glyphicon-phone"></span>
-						<h3>Mobile Developer</h3>
-						<p>Please login and Browse our Mobile Developer</p>
+						<h3 style="color: #E9B384;">Mobile Developer</h3>
+						<p style="color: #E9B384;">Please login and Browse our Mobile Developer</p>
 					</a>
 				</div>
 			</div>
 			<div class="col-lg-4">
 				<div class="card" style="padding:20px 40px 20px 40px;margin:20px;">
 					<a href="loginReg.php"><span class="glyphicon glyphicon-picture"></span>
-						<h3>Graphics Designer</h3>
-						<p>Please login and browse our Graphics Designer</p>
+						<h3 style="color: #E9B384;">Graphics Designer</h3>
+						<p style="color: #E9B384;">Please login and browse our Graphics Designer</p>
 					</a>
 				</div>
 			</div>
@@ -289,24 +291,24 @@ if (isset($_SESSION["Username"])) {
 			<div class="col-lg-4">
 				<div class="card" style="padding:20px 40px 20px 40px;margin:20px;">
 					<a href="loginReg.php"><span class="glyphicon glyphicon-pencil"></span>
-						<h3>Creative writer</h3>
-						<p>Please login and browse our Creative writer</p>
+						<h3 style="color: #E9B384;">Creative writer</h3>
+						<p style="color: #E9B384;">Please login and browse our Creative writer</p>
 					</a>
 				</div>
 			</div>
 			<div class="col-lg-4">
 				<div class="card" style="padding:20px 40px 20px 40px;margin:20px;">
 					<a href="loginReg.php"><span class="glyphicon glyphicon-signal"></span>
-						<h3>Marketing Expert</h3>
-						<p>Please login and browse our Marketing Expert</p>
+						<h3 style="color: #E9B384;">Marketing Expert</h3>
+						<p style="color: #E9B384;">Please login and browse our Marketing Expert</p>
 					</a>
 				</div>
 			</div>
 			<div class="col-lg-4">
 				<div class="card" style="padding:20px 40px 20px 40px;margin:20px;">
 					<a href="loginReg.php"><span class="glyphicon glyphicon-headphones"></span>
-						<h3>Virtual Assistant</h3>
-						<p>Please login and browse our web Virtual Assistant</p>
+						<h3 style="color: #E9B384;">Virtual Assistant</h3>
+						<p style="color: #E9B384;">Please login and browse our web Virtual Assistant</p>
 					</a>
 				</div>
 			</div>
