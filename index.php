@@ -219,7 +219,8 @@ if (isset($_SESSION["Username"])) {
 	End Individual register tip-->
 
 	<div style="background:#7C9D96; display: flex; justify-content: center; align-items: center; height: 100vh;">
-		<div class="container text-center" style="padding: 5%; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); border-radius: 10px;">
+		<!-- <div class="container text-center" style="padding: 5%; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); border-radius: 10px;"> -->
+		<div class="container text-center" style="padding: 5%;">
 			<div class="row">
 				<div class="col-lg-5 card" style="padding: 40px 80px 40px 80px; margin-bottom: 15px; margin-right: 10px; margin-left: auto; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); border-radius: 10px; background-color: #FFFFFF;">
 					<h1>Need works done?</h1>
@@ -229,7 +230,7 @@ if (isset($_SESSION["Username"])) {
 					<a href="loginReg.php" class="btn btn-success btn-lg">Get Started</a>
 				</div>
 
-				<div class="col-lg-5 card" style="padding: 40px 80px 40px 80px; margin-bottom: 15px; margin-left: 10px; margin-right: auto; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); border-radius: 10px; background-color: #FFFFFF;">
+				<div class="col-lg-5 card" style="padding: 100px 80px 40px 80px; margin-bottom: 15px; margin-left: 150px; margin-right: auto; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); border-radius: 10px; background-color: #FFFFFF;">
 					<h1>Looking for work?</h1>
 					<br>
 					<p style="text-align: justify; font-size: larger;">If you are an expert in any kind of computer-related or online work, then do not hesitate to join our platform. It is easy to use and payment is secured. It is a great platform for those people who are skillful. So do not miss the chance to explore the job posts and make some money.</p>
@@ -239,6 +240,26 @@ if (isset($_SESSION["Username"])) {
 			</div>
 		</div>
 	</div>
+	<!--Individual register tip-->
+	<!-- <div style="background:#7C9D96; display: flex; justify-content: center; height: 100vh;">
+	<div class="container text-center" style="padding: 5%; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); border-radius: 10px;">
+		<div class="row">
+			<div class="col-lg-5 card" style="padding:40px 80px 40px 80px;">
+				<h1>Need works done?</h1>
+				<p>It's easy. Simply post a job you need completed and receive competitive bids from freelancers within minutes. Whatever your needs, there will be a freelancer to get it done: from web design, mobile app development, virtual assistants, product manufacturing, and graphic design (and a whole lot more). It is the simplest and safest way to get work done online.</p>
+				<p></p>
+				<a href="loginReg.php" class="btn btn-success btn-lg">Get Started</a>
+			</div>
+			<div class="col-lg-5" style="padding:40px 80px 40px 80px;margin-top:15px;box-shadow: 4px 4px 2px 5px rgba(0, 0, 0, 0.2), 0 6px 0px 0 rgba(0, 0, 0, 0.19);background:#fff">
+				<h1>Looking for work?</h1>
+				<p>If you are an expert in any kind of computer related or online work, then do not hesitate to join our platform. It is easy to use and payment is secured. It is a great platform to those people who are skillful. So do not miss the chance to explore the job posts and make some money.</p>
+				<p></p>
+				<a href="loginReg.php" class="btn btn-primary btn-lg">Get Started</a>
+			</div>
+		</div>
+	</div>
+	</div> -->
+	<!--End Individual register tip-->
 
 
 
@@ -374,7 +395,7 @@ if (isset($_SESSION["Username"])) {
 
 
 			<div id="demo" class="collapse">
-				<div class="card" style="padding:20px 40px 20px 40px;">
+				<div class="card" style="padding:20px 40px 20px 40px; width: 1062px;  box-shadow: 2px 2px 4px rgba(0, 0, 0.5, 0.5), 0px 4px 4px rgba(0, 0, 0.5, 0.5);">
 					<h4 style="text-align: justify;">Freelance marketplace is an online outsourcing platform that puts employers and businesses in contact with a global network of freelancers. Any member can post a project, whether a short- or long-term job, and choose from skilled freelancers who offer bid proposals with rate for completing the work. It's a mutually beneficial arrangement. <br> <br>Employers can have their pick of thousands of freelancers who have the exact skills needed to get the job done, without undertaking the expense and commitment of hiring full-time employees in person. Freelancers can tap into a readily available source of constant part-time and full-time work opportunities from employers who are specifically seeking them out.</h4>
 				</div>
 			</div>
@@ -386,7 +407,7 @@ if (isset($_SESSION["Username"])) {
 
 
 			<div id="demo1" class="collapse">
-				<div class="card" style="padding:20px 40px 20px 40px;">
+				<div class="card" style="padding:20px 40px 20px 40px; width: 1062px;  box-shadow: 2px 2px 4px rgba(0, 0, 0.5, 0.5), 0px 4px 4px rgba(0, 0, 0.5, 0.5);">
 					<h4 style="text-align: justify;">You can gain a competitive advantage over your competition by tapping into a skilled global workforce on demand. If you are a small business and can't afford to hire a full-time staff, don't fret! The power of Freelancer is available for small to medium businesses! Whether it's a website that needs building, business cards or stationery that needs designing, a product that needs to be designed or manufactured, or research that needs to be done, this is the place for you! <br><br>Thousands of skilled workers are ready to start working right now! All you need to do is post a project!</h4>
 				</div>
 			</div>
@@ -397,7 +418,7 @@ if (isset($_SESSION["Username"])) {
 
 
 			<div id="demo2" class="collapse">
-				<div class="card" style="padding:20px 40px 20px 40px;">
+				<div class="card" style="padding:20px 40px 20px 40px; width: 1062px;  box-shadow: 2px 2px 4px rgba(0, 0, 0.5, 0.5), 0px 4px 4px rgba(0, 0, 0.5, 0.5);">
 					<h4 style="text-align: justify;">With Freelancer, you can work at home and tap into a global network of businesses and projects across a huge range of industries - the ultimate opportunity in job flexibility! Work on what you want, when you want and where you want to! The lifestyle of a freelancer is taking off. By working as a Freelancer online, you can greatly increase your client base and job throughput. <br><br>To start, all you need to do is sign up and start bidding. It's FREE!</h4>
 				</div>
 			</div>
@@ -408,7 +429,7 @@ if (isset($_SESSION["Username"])) {
 
 
 			<div id="demo3" class="collapse">
-				<div class="card" style="padding:20px 40px 20px 40px;">
+				<div class="card" style="padding:20px 40px 20px 40px; width: 1062px;  box-shadow: 2px 2px 4px rgba(0, 0, 0.5, 0.5), 0px 4px 4px rgba(0, 0, 0.5, 0.5);">
 					<h4 style="text-align: justify;">No. Freelance marketplace is absolutely free to register and explore the posted job offers, freelancers and employers.</h4>
 				</div>
 			</div>
