@@ -40,8 +40,8 @@
 <body>
 
     <!--Navbar menu-->
-    <nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar style=" background-color: #7C9D96;">
-        <div class="container">
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar" style="background-color: #7C9D96;">
+        <div class=" container">
             <div class="navber-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="icon-bar"></span>
