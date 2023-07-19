@@ -123,14 +123,6 @@ if (isset($_POST["s_email"])) {
 							<h3>All Freelancer</h3>
 						</div>
 						<div class="panel-body">
-							<table style="width:100%">
-								<tr>
-									<td>Username</td>
-									<td>Name</td>
-									<td>Professional Title</td>
-									<td>Email</td>
-									<td>Skill</td>
-								</tr>
 								<?php
 								if ($result->num_rows > 0) {
 									// output data of each row
@@ -142,16 +134,20 @@ if (isset($_POST["s_email"])) {
 										$skills = $row["skills"];
 
 										echo '
-                                <form action="allFreelancer.php" method="post">
-                                <input type="hidden" name="f_user" value="' . $f_username . '">
-                                    <tr>
-                                    <td><input type="submit" class="btn btn-link btn-lg" value="' . $f_username . '"></td>
-                                    <td>' . $Name . '</td>
-                                    <td>' . $prof_title . '</td>
-                                    <td>' . $email . '</td>
-                                    <td>' . $skills . '</td>
-                                    </tr>
-                                </form>
+										<form action="allFreelancer.php" method="post">
+										<input type="hidden" name="f_user" value="'.$f_username.'">
+											<div class="col-md-6 col-lg-3">
+												<div class="single_candidates text-center">
+													<div class="thumb">
+														<img src="image/Corporateicon.png" alt="" width="100" height="100">
+													</div>
+													<a href=""><input type="submit" class="btn btn-link btn-lg" value="'.$Name.'"></a><br>
+													<p3>'.$prof_title.'</p3><br>
+													<p3>'.$email.'</p3><br>Skill: '.$skills.'<br><br><br><br><br>
+												</div>
+											</div>
+											</tr>
+										</form>
                                 ';
 									}
 								} else {
@@ -159,26 +155,6 @@ if (isset($_POST["s_email"])) {
 								}
 
 								?>
-							</table>
-							<!-- Card Start  -->
-							<?php foreach ($result as $i => $croom) : $f_username = $croom["username"]; ?>
-								<form action="allFreelancer.php" method="post">
-									<input type="hidden" name="f_user" value="<?php echo $croom['username'] ?>">
-									<div class="col-md-6 col-lg-3">
-										<div class="single_candidates text-center">
-											<div class="thumb">
-												<img src="image/Corporateicon.png" alt="" width="100" height="100">
-											</div>
-											<a href="viewFreelancer.php?username=<?php echo $croom['username'] ?>">
-												<h4><?php echo $croom['Name'] ?> </h4>
-											</a>
-											<p1><?php echo $croom['prof_title'] ?></p1><br><br>
-											<p><?php echo $croom['email'] ?><br>Skill: <?php echo $croom['skills'] ?></p><br><br><br>
-										</div>
-									</div>
-								</form>
-							<?php endforeach; ?>
-							<!-- Card Finish  -->
 						</div>
 					</div>
 					<p></p>
