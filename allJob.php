@@ -85,6 +85,151 @@ if (isset($_POST["oldJob"])) {
 			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 			background: #fff
 		}
+		article.job-card {
+  display: grid;
+  grid-template-columns: 80px auto 100px;
+  grid-template-rows: 35px 10px 35px;
+  width: 870px;
+  position: relative;
+  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+  font-family: 'Helvetica';
+  padding: 24px;
+}
+
+article.job-card:hover,
+article.job-card:focus {
+  background-color: rgba(0,166,194,.03);
+    border-color: #b2e4ec;
+}
+
+.company-logo-img {
+  grid-area: 1 / 1 / 2 / 2;
+  background-color: #fff;
+  border: 1px solid #e3e3e3;
+  height: 80px;
+  width: 80px;
+  box-sizing: border-box;
+  position: relative;
+  padding: 5px;
+}
+
+.company-logo-img img {
+  max-height: calc(100% - 10px);
+  max-width: calc(100% - 10px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.job-title {
+  grid-area: 1 / 2 / 2 / 3;
+  font-size: 16px;
+  align-self: start;
+  font-weight: 500;
+  margin-top: 5px;
+  padding: 0 24px;
+}
+
+.company-name {
+  grid-area: 2 / 2 / 3 / 3;
+  align-self: center;
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 5px;
+  padding: 0 24px;
+}
+
+.skills-container {
+  grid-area: 3 / 2 / 4 / 3;
+  align-self: center;
+  padding-top: 10px;
+  padding: 0 24px;
+}
+
+.skill {
+  display: inline;
+  color: #00a6c2;
+  border-radius: 2px;
+  background-color: rgba(0,166,194,.05);
+  border: 1px solid rgba(0,166,194,.15);
+  padding: 5px 8px;
+  font-size: 12px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 6px 12px;
+  z-index: 2;
+}
+.apply {
+  grid-area: 1 / 3 / 2 / 4;
+  background-color: #1ab059;
+  color: #fff;
+}
+.save {
+  grid-area: 3 / 3 / 4 / 4;
+  background-color: #fff;
+  border: 1px solid #a4a5a8;
+  color: #777;
+}
+
+
+
+.mobile-wrapper {
+  margin-top: 50px;
+  max-width: 400px;
+
+}
+
+.mobile-wrapper article {
+  grid-template-columns: 60px auto;
+  grid-template-rows: 35px 25px auto 40px;
+  width: calc(100% - 32px);
+  padding: 16px;
+}
+
+.mobile-wrapper .company-logo-img {
+  grid-area: 1 / 1 / 3 / 2;
+  height: 60px;
+  width: 60px;
+}
+
+.mobile-wrapper .job-title {
+  grid-area: 1 / 2 / 2 / 2;
+  padding: 8px 16px 0 16px;
+}
+
+.mobile-wrapper .company-name {
+  grid-area: 2 / 2 / 3 / 2;
+  padding: 0 16px;
+}
+
+.mobile-wrapper .skills-container {
+  grid-area: 3 / 1 / 4 / 3;
+  padding: 16px 0;
+}
+
+.mobile-wrapper .btn-container {
+  grid-area: 4 / 1 / 5 / 3;
+  display: flex;
+}
+
+.mobile-wrapper .btn-container button {
+  height: 38px;
+  flex: 1;
+  width: 0;
+}
+
+.mobile-wrapper .btn-container .apply {
+    margin-right: 10px;
+}
 	</style>
 
 </head>
@@ -140,15 +285,6 @@ if (isset($_POST["oldJob"])) {
 						</div>
 						<div class="panel-body">
 							<h4>
-								<table style="width:100%">
-									<tr>
-										<td>Job Id</td>
-										<td>Title</td>
-										<td>Type</td>
-										<td>Budget</td>
-										<td>Emplyer</td>
-										<td>Posted on</td>
-									</tr>
 									<?php
 									if ($result->num_rows > 0) {
 										// output data of each row
@@ -159,18 +295,25 @@ if (isset($_POST["oldJob"])) {
 											$budget = $row["budget"];
 											$e_username = $row["e_username"];
 											$timestamp = $row["timestamp"];
+											$skills = $row["skills"];
 
 											echo '
                                 <form action="allJob.php" method="post">
                                 <input type="hidden" name="jid" value="' . $job_id . '">
-                                    <tr>
-                                    <td>' . $job_id . '</td>
-                                    <td><input type="submit" class="btn btn-link btn-lg" value="' . $title . '"></td>
-                                    <td>' . $type . '</td>
-                                    <td>' . $budget . '</td>
-                                    <td>' . $e_username . '</td>
-                                    <td>' . $timestamp . '</td>
-                                    </tr>
+									<article class="job-card">
+										<div class="company-logo-img">
+										<img src="image/iconjob.png" alt="" width="100" height="100">
+										</div>
+										<div class="job-title">' . $title . '</div>
+										<div class="company-name">Type:' . $type . '; Budget: ' . $budget . ' <br> ' . $timestamp . '</div>
+											<div class="skills-container">
+												<div class="skill">' . $skills . '</div>
+											</div>
+										<button class="apply">Apply</button>
+										<button class="save" disabled>' . $e_username . '</button>
+										
+										
+									</article><br>
                                 </form>
                                 ';
 										}
@@ -179,7 +322,6 @@ if (isset($_POST["oldJob"])) {
 									}
 
 									?>
-								</table>
 							</h4>
 						</div>
 					</div>
