@@ -348,7 +348,7 @@ if (isset($_SESSION["Username"])) {
 					<p style="text-align: justify;">It's always free to post your project. You’ll automatically begin to receive bids from our freelancers. Also, you can browse through the talent available on our site, and contact them by the contact information.</p>
 				</div>
 				<div class="col-lg-6">
-					<img src="image/image1">
+					<img src="image/image1.jpg" width="200" height="200">
 				</div>
 			</div>
 			<div class="row card" style="padding:30px 60px 30px 60px;margin:30px;">
@@ -357,7 +357,7 @@ if (isset($_SESSION["Username"])) {
 					<p style="text-align: justify;">We have a complete security to your valuable money. You have the rights to pay the deposited money after the project completed. We have a good refund policy to make sure of satisfaction of the project completed.</p>
 				</div>
 				<div class="col-lg-6">
-					<img src="image/img02.jpg">
+					<img src="image/image2.jpg width=" 200" height="200">
 				</div>
 			</div>
 			<div class="row card" style="padding:30px 60px 30px 60px;margin:30px;">
