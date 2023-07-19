@@ -136,27 +136,27 @@ if (isset($_POST["send"])) {
     <div class="text-center" style="padding:4%;background:#222;color:#fff;margin-top:20px;">
         <div class="row">
             <div class="col-lg-3">
-                <h3>Quick Links</h3>
-                <p><a href="index.php">Home</a></p>
-                <p><a href="allJob.php">Browse all jobs</a></p>
-                <p><a href="allFreelancer.php">Browse Freelancers</a></p>
-                <p><a href="allEmployer.php">Browse Employers</a></p>
+                <h3 style="color: #F4F2DE;">Quick Links</h3>
+                <p style="color: #E9B384;"><a href="index.php">Home</a></p>
+                <p style="color: #E9B384;"><a href="allJob.php">Browse all jobs</a></p>
+                <p style="color: #E9B384;"><a href="allFreelancer.php">Browse Freelancers</a></p>
+                <p style="color: #E9B384;"><a href="allEmployer.php">Browse Employers</a></p>
             </div>
             <div class="col-lg-3">
-                <h3>About Us</h3>
-                <p>Rahamat-E-Elahi, CUET ID-1304054</p>
-                <p>Shovagata Sarker Borno, CUET ID-1304041</p>
-                <p>Md. Sharifullah, CUET ID-1304049</p>
-                <p>&copy 2018</p>
+                <h3 style="color: #F4F2DE;">About Us</h3>
+                <p style="color: #E9B384;">Rahamat-E-Elahi, CUET ID-1304054</p>
+                <p style="color: #E9B384;">Shovagata Sarker Borno, CUET ID-1304041</p>
+                <p style="color: #E9B384;">Md. Sharifullah, CUET ID-1304049</p>
+                <p style="color: #E9B384;">&copy 2018</p>
             </div>
             <div class="col-lg-3">
-                <h3>Contact Us</h3>
-                <p>Chittagong University of Engineering and Technology</p>
-                <p>Chittagong, Bangladesh</p>
-                <p>&copy CUET 2018</p>
+                <h3 style="color: #F4F2DE;">Contact Us</h3>
+                <p style="color: #E9B384;">Chittagong University of Engineering and Technology</p>
+                <p style="color: #E9B384;">Chittagong, Bangladesh</p>
+                <p style="color: #E9B384;">&copy CUET 2018</p>
             </div>
             <div class="col-lg-3">
-                <h3>Social Contact</h3>
+                <h3 style="color: #F4F2DE;">Social Contact</h3>
                 <p style="font-size:20px;color:#3B579D;"><i class="fab fa-facebook-square"> Facebook</i></p>
                 <p style="font-size:20px;color:#D34438;"><i class="fab fa-google-plus-square"> Google</i></p>
                 <p style="font-size:20px;color:#2CAAE1;"><i class="fab fa-twitter-square"> Twitter</i></p>

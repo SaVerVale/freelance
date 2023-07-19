@@ -232,8 +232,8 @@ if (isset($_POST["s_email"])) {
 	<div class="text-center" style="padding:4%;background:#222;color:#fff;margin-top:20px;">
 		<div class="row">
 			<div class="col-lg-3">
-				<h3>Quick Links</h3>
-				<p><a href="index.php" style="color: #F4F2DE;">Home</a></p>
+				<h3 style="color: #F4F2DE;">Quick Links</h3>
+				<p><a href="index.php" style="color: #E9B384;">Home</a></p>
 				<p><a href="allJob.php" style="color: #E9B384;">Browse all jobs</a></p>
 				<p><a href="allFreelancer.php" style="color: #E9B384;">Browse Freelancers</a></p>
 				<p><a href="allEmployer.php" style="color: #E9B384;">Browse Employers</a></p>
