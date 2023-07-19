@@ -123,13 +123,6 @@ if (isset($_POST["s_email"])) {
 						</div>
 						<div class="panel-body">
 							<h4>
-								<table style="width:100%">
-									<tr>
-										<td>Username</td>
-										<td>Name</td>
-										<td>Email</td>
-										<td>Company</td>
-									</tr>
 									<?php
 									if ($result->num_rows > 0) {
 										// output data of each row
@@ -138,16 +131,21 @@ if (isset($_POST["s_email"])) {
 											$Name = $row["Name"];
 											$email = $row["email"];
 											$company = $row["company"];
+											$contact_no = $row["contact_no"];
 
 											echo '
                                 <form action="allEmployer.php" method="post">
                                 <input type="hidden" name="e_user" value="' . $e_username . '">
-                                    <tr>
-                                    <td><input type="submit" class="btn btn-link btn-lg" value="' . $e_username . '"></td>
-                                    <td>' . $Name . '</td>
-                                    <td>' . $email . '</td>
-                                    <td>' . $company . '</td>
-                                    </tr>
+									<div class="col-md-6 col-lg-3">
+										<div class="single_candidates text-center">
+											<div class="thumb">
+												<img src="image/company.png" alt="" width="100" height="100">
+											</div>
+											<a href=""><input type="submit" class="btn btn-link btn-lg" value="'.$Name.'"></a><br>
+											<p3>Email: '.$email.'</p3><br>
+											<p3>Company: '.$company.'</p3><br>'.$contact_no.'<br><br><br><br><br>
+										</div>
+									</div>
                                 </form>
                                 ';
 										}
@@ -156,7 +154,6 @@ if (isset($_POST["s_email"])) {
 									}
 
 									?>
-								</table>
 							</h4>
 						</div>
 					</div>
