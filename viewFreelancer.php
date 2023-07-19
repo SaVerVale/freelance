@@ -1,4 +1,6 @@
 <?php include('server.php');
+// $Room_ID = $_GET['Room_ID'] ?? null;
+
 if (isset($_SESSION["Username"])) {
 	$username = $_SESSION["Username"];
 	if ($_SESSION["Usertype"] == 1) {

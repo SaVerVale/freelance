@@ -57,6 +57,7 @@ if (isset($_POST["s_email"])) {
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css">
 	<link rel="stylesheet" type="text/css" href="awesome/css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="stylesheet.css">
 
 	<style>
 		body {
@@ -122,45 +123,61 @@ if (isset($_POST["s_email"])) {
 							<h3>All Freelancer</h3>
 						</div>
 						<div class="panel-body">
-							<h4>
-								<table style="width:100%">
-									<tr>
-										<td>Username</td>
-										<td>Name</td>
-										<td>Professional Title</td>
-										<td>Email</td>
-										<td>Skill</td>
-									</tr>
-									<?php
-									if ($result->num_rows > 0) {
-										// output data of each row
-										while ($row = $result->fetch_assoc()) {
-											$f_username = $row["username"];
-											$Name = $row["Name"];
-											$prof_title = $row["prof_title"];
-											$email = $row["email"];
-											$skills = $row["skills"];
+						<table style="width:100%">
+                      <tr>
+                          <td>Username</td>
+                          <td>Name</td>
+                          <td>Professional Title</td>
+                          <td>Email</td>
+                          <td>Skill</td>
+                      </tr>
+                      <?php 
+                      if ($result->num_rows > 0) {
+                            // output data of each row
+                            while($row = $result->fetch_assoc()) {
+                                $f_username=$row["username"];
+                                $Name=$row["Name"];
+                                $prof_title=$row["prof_title"];
+                                $email=$row["email"];
+                                $skills=$row["skills"];
 
-											echo '
+                                echo '
                                 <form action="allFreelancer.php" method="post">
-                                <input type="hidden" name="f_user" value="' . $f_username . '">
+                                <input type="hidden" name="f_user" value="'.$f_username.'">
                                     <tr>
-                                    <td><input type="submit" class="btn btn-link btn-lg" value="' . $f_username . '"></td>
-                                    <td>' . $Name . '</td>
-                                    <td>' . $prof_title . '</td>
-                                    <td>' . $email . '</td>
-                                    <td>' . $skills . '</td>
+                                    <td><input type="submit" class="btn btn-link btn-lg" value="'.$f_username.'"></td>
+                                    <td>'.$Name.'</td>
+                                    <td>'.$prof_title.'</td>
+                                    <td>'.$email.'</td>
+                                    <td>'.$skills.'</td>
                                     </tr>
                                 </form>
                                 ';
-										}
-									} else {
-										echo "<tr></tr><tr><td></td><td>Nothing to show</td></tr>";
-									}
 
-									?>
-								</table>
-							</h4>
+                                }
+                        } else {
+                            echo "<tr></tr><tr><td></td><td>Nothing to show</td></tr>";
+                        }
+
+                       ?>
+                     </table>
+							<!-- Card Start  -->
+							<?php foreach ($result as $i => $croom) : $f_username=$croom["username"];?>
+							<form action="allFreelancer.php" method="post">
+							<input type="hidden" name="f_user" value="<?php echo $croom['username'] ?>">
+								<div class="col-md-6 col-lg-3">
+									<div class="single_candidates text-center">
+										<div class="thumb">
+											<img src="image/Corporateicon.png" alt="" width="100" height="100">
+										</div>
+										<a href="viewFreelancer.php?username=<?php echo $croom['username'] ?>"><h4><?php echo $croom['Name'] ?> </h4></a>
+										<p1><?php echo $croom['prof_title'] ?></p1><br><br>
+										<p><?php echo $croom['email'] ?><br>Skill: <?php echo $croom['skills'] ?></p><br><br><br>
+									</div>
+								</div>
+							</form>
+							<?php endforeach;?>
+							<!-- Card Finish  -->
 						</div>
 					</div>
 					<p></p>
