@@ -255,25 +255,25 @@ if (isset($_POST["oldJob"])) {
 			<div class="col-lg-3">
 				<h3>Quick Links</h3>
 				<p><a href="index.php" style="color: #F4F2DE;">Home</a></p>
-				<p><a href="allJob.php" style="color: #F4F2DE;">Browse all jobs</a></p>
-				<p><a href="allFreelancer.php" style="color: #F4F2DE;">Browse Freelancers</a></p>
-				<p><a href="allEmployer.php" style="color: #F4F2DE;">Browse Employers</a></p>
+				<p><a href="allJob.php" style="color: #E9B384;">Browse all jobs</a></p>
+				<p><a href="allFreelancer.php" style="color: #E9B384;">Browse Freelancers</a></p>
+				<p><a href="allEmployer.php" style="color: #E9B384;">Browse Employers</a></p>
 			</div>
 			<div class="col-lg-3">
-				<h3>About Us</h3>
-				<p>Rahamat-E-Elahi, CUET ID-1304054</p>
-				<p>Shovagata Sarker Borno, CUET ID-1304041</p>
-				<p>Md. Sharifullah, CUET ID-1304049</p>
-				<p>&copy 2018</p>
+				<h3 style="color: #F4F2DE;">About Us</h3>
+				<p style="color: #E9B384;">Rahamat-E-Elahi, CUET ID-1304054</p>
+				<p style="color: #E9B384;">Shovagata Sarker Borno, CUET ID-1304041</p>
+				<p style="color: #E9B384;">Md. Sharifullah, CUET ID-1304049</p>
+				<p style="color: #E9B384;">&copy 2018</p>
 			</div>
 			<div class="col-lg-3">
-				<h3>Contact Us</h3>
-				<p>Chittagong University of Engineering and Technology</p>
-				<p>Chittagong, Bangladesh</p>
-				<p>&copy CUET 2018</p>
+				<h3 style="color: #F4F2DE;">Contact Us</h3>
+				<p style="color: #E9B384;">Chittagong University of Engineering and Technology</p>
+				<p style="color: #E9B384;">Chittagong, Bangladesh</p>
+				<p style="color: #E9B384;">&copy CUET 2018</p>
 			</div>
 			<div class="col-lg-3">
-				<h3>Social Contact</h3>
+				<h3 style="color: #F4F2DE;">Social Contact</h3>
 				<p style="font-size:20px;color:#3B579D;"><i class="fab fa-facebook-square"> Facebook</i></p>
 				<p style="font-size:20px;color:#D34438;"><i class="fab fa-google-plus-square"> Google</i></p>
 				<p style="font-size:20px;color:#2CAAE1;"><i class="fab fa-twitter-square"> Twitter</i></p>
