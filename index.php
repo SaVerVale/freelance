@@ -286,8 +286,8 @@ if (isset($_SESSION["Username"])) {
 			<div class="col-lg-4">
 				<div class="card" style="padding:20px 40px 20px 40px;margin:20px;">
 					<a href="loginReg.php"><span class="glyphicon glyphicon-credit-card"></span>
-						<h3 style="color: #E9B384;"> Web Developer</h3>
-						<p style="color: #E9B384;">Please login and browse our web developers</p>
+						<h3 style="color: #7C9D96;"> Home Services</h3>
+						<p style="color: #E9B384;">Please login and browse our home services</p>
 					</a>
 				</div>
 
@@ -295,16 +295,16 @@ if (isset($_SESSION["Username"])) {
 			<div class="col-lg-4">
 				<div class="card" style="padding:20px 40px 20px 40px;margin:20px;">
 					<a href="loginReg.php"><span class="glyphicon glyphicon-phone"></span>
-						<h3 style="color: #E9B384;">Mobile Developer</h3>
-						<p style="color: #E9B384;">Please login and Browse our Mobile Developer</p>
+						<h3 style="color: #7C9D96;">Repairs</h3>
+						<p style="color: #E9B384;">Please login and browse our repair services </p>
 					</a>
 				</div>
 			</div>
 			<div class="col-lg-4">
 				<div class="card" style="padding:20px 40px 20px 40px;margin:20px;">
 					<a href="loginReg.php"><span class="glyphicon glyphicon-picture"></span>
-						<h3 style="color: #E9B384;">Graphics Designer</h3>
-						<p style="color: #E9B384;">Please login and browse our Graphics Designer</p>
+						<h3 style="color: #7C9D96;">Event Assistance</h3>
+						<p style="color: #E9B384;">Please login and browse our event assistance services</p>
 					</a>
 				</div>
 			</div>
@@ -313,23 +313,23 @@ if (isset($_SESSION["Username"])) {
 			<div class="col-lg-4">
 				<div class="card" style="padding:20px 40px 20px 40px;margin:20px;">
 					<a href="loginReg.php"><span class="glyphicon glyphicon-pencil"></span>
-						<h3 style="color: #E9B384;">Creative writer</h3>
-						<p style="color: #E9B384;">Please login and browse our Creative writer</p>
+						<h3 style="color: #7C9D96;">Tutoring</h3>
+						<p style="color: #E9B384;">Please login and browse our tutoring services</p>
 					</a>
 				</div>
 			</div>
 			<div class="col-lg-4">
 				<div class="card" style="padding:20px 40px 20px 40px;margin:20px;">
 					<a href="loginReg.php"><span class="glyphicon glyphicon-signal"></span>
-						<h3 style="color: #E9B384;">Marketing Expert</h3>
-						<p style="color: #E9B384;">Please login and browse our Marketing Expert</p>
+						<h3 style="color: #7C9D96;">Personal Fitness Training</h3>
+						<p style="color: #E9B384;">Please login and browse our personal fitness training services</p>
 					</a>
 				</div>
 			</div>
 			<div class="col-lg-4">
 				<div class="card" style="padding:20px 40px 20px 40px;margin:20px;">
 					<a href="loginReg.php"><span class="glyphicon glyphicon-headphones"></span>
-						<h3 style="color: #E9B384;">Virtual Assistant</h3>
+						<h3 style="color: #7C9D96;">Virtual Assistant</h3>
 						<p style="color: #E9B384;">Please login and browse our web Virtual Assistant</p>
 					</a>
 				</div>
