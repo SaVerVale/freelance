@@ -348,7 +348,7 @@ if (isset($_SESSION["Username"])) {
 					<p style="text-align: justify;">It's always free to post your project. You’ll automatically begin to receive bids from our freelancers. Also, you can browse through the talent available on our site, and contact them by the contact information.</p>
 				</div>
 				<div class="col-lg-6">
-					<img src="image/img01.jpg">
+					<img src="image/image1">
 				</div>
 			</div>
 			<div class="row card" style="padding:30px 60px 30px 60px;margin:30px;">
