@@ -329,8 +329,8 @@ if (isset($_SESSION["Username"])) {
 			<div class="col-lg-4">
 				<div class="card" style="padding:20px 40px 20px 40px;margin:20px;">
 					<a href="loginReg.php"><span class="glyphicon glyphicon-headphones"></span>
-						<h3 style="color: #7C9D96;">Virtual Assistant</h3>
-						<p style="color: #E9B384;">Please login and browse our web Virtual Assistant</p>
+						<h3 style="color: #7C9D96;">Graphic Design</h3>
+						<p style="color: #E9B384;">Please login and browse our graphic designers </p>
 					</a>
 				</div>
 			</div>
@@ -442,25 +442,25 @@ if (isset($_SESSION["Username"])) {
 	<div class="text-center" style="padding:4%;background:#222;color:#fff;margin-top:20px;">
 		<div class="row">
 			<div class="col-lg-3">
-				<h3>Quick Links</h3>
-				<p><a href="index.php">Home</a></p>
-				<p><a href="#how">How it works</a></p>
-				<p><a href="#faq">FAQ</a></p>
-				<p><a href="loginReg.php">Login</a></p>
-				<p><a href="loginReg.php">Register</a></p>
+				<h3 style="color: #F4F2DE;">Quick Links</h3>
+				<p><a href="index.php" style="color: #E9B384;">Home</a></p>
+				<p><a href="#how" style="color: #E9B384;">How it works</a></p>
+				<p><a href="#faq" style="color: #E9B384;">FAQ</a></p>
+				<p><a href="loginReg.php" style="color: #E9B384;">Login</a></p>
+				<p><a href="loginReg.php" style="color: #E9B384;">Register</a></p>
 			</div>
 			<div class="col-lg-3">
-				<h3>About Us</h3>
-				<p>Rahamat-E-Elahi, CUET ID-1304054</p>
-				<p>Shovagata Sarker Borno, CUET ID-1304041</p>
-				<p>Md. Sharifullah, CUET ID-1304049</p>
-				<p>&copy 2018</p>
+				<h3 style="color: #F4F2DE;">About Us</h3>
+				<p style="color: #E9B384;">Rahamat-E-Elahi, CUET ID-1304054</p>
+				<p style="color: #E9B384;">Shovagata Sarker Borno, CUET ID-1304041</p>
+				<p style="color: #E9B384;">Md. Sharifullah, CUET ID-1304049</p>
+				<p style="color: #E9B384;">&copy 2018</p>
 			</div>
 			<div class="col-lg-3">
-				<h3>Contact Us</h3>
-				<p>Chittagong University of Engineering and Technology</p>
-				<p>Chittagong, Bangladesh</p>
-				<p>&copy CUET 2018</p>
+				<h3 style="color: #F4F2DE;">Contact Us</h3>
+				<p style="color: #E9B384;">Chittagong University of Engineering and Technology</p>
+				<p style="color: #E9B384;">Chittagong, Bangladesh</p>
+				<p style="color: #E9B384;">&copy CUET 2018</p>
 			</div>
 			<div class="col-lg-3">
 				<h3>Social Contact</h3>

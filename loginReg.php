@@ -232,10 +232,10 @@
     <div class="text-center" style="padding:4%;background:#222;color:#fff;margin-top:20px;">
         <div class="row">
             <div class="col-lg-3">
-                <h3>Quick Links</h3>
-                <p><a href="index.php">Home</a></p>
+                <h3 style="color: #F4F2DE;">Quick Links</h3>
+                <p><a href="index.php" style="color: #F4F2DE;">Home</a></p>
             </div>
-            <div class="col-lg-3">
+            <div class=" col-lg-3">
                 <h3>About Us</h3>
                 <p>Rahamat-E-Elahi, CUET ID-1304054</p>
                 <p>Shovagata Sarker Borno, CUET ID-1304041</p>
