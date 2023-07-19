@@ -366,7 +366,7 @@ if (isset($_SESSION["Username"])) {
 					<p style="text-align: justify;">It is easier to talk with the freelancers here. So before you hire any freelancer feel free to talk with them. Tell them what you need and get the project done in the shortest possible time.</p>
 				</div>
 				<div class="col-lg-6">
-					<img src="image/img03.jpg">
+					<img src="image/image3.jpg" width="150" height="150">
 				</div>
 			</div>
 			<div class="row card" style="padding:30px 60px 30px 60px;margin:30px;">
@@ -375,7 +375,7 @@ if (isset($_SESSION["Username"])) {
 					<p style="text-align: justify;">If you have a lot of works to be done or run a small business that needs some freelancers in a daily basis, this is the perfect place for you. Build your employer profile today and start hiring.</p>
 				</div>
 				<div class="col-lg-6">
-					<img src="image/img04.jpg">
+					<img src="image/image4.jpg" width="150" height="150">
 				</div>
 			</div>
 		</div>
