@@ -76,7 +76,7 @@ if (isset($_POST["s_email"])) {
 <body>
 
 	<!--Navbar menu-->
-	<nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+	<nav class="navbar navbar-fixed-top" id="my-navbar" style="background-color: #7C9D96;">
 		<div class="container">
 			<div class="navber-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
@@ -85,13 +85,13 @@ if (isset($_POST["s_email"])) {
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a href="index.php" class="navbar-brand">Freelance Marketplace</a>
+				<a href="index.php" class="navbar-brand" style="color: #F4F2DE;">Freelance Marketplace</a>
 			</div>
 			<div class="collapse navbar-collapse" id="navbar-collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="allJob.php">Browse all jobs</a></li>
-					<li><a href="allFreelancer.php">Browse Freelancers</a></li>
-					<li><a href="allEmployer.php">Browse Employers</a></li>
+					<li><a href="allJob.php" style="color: #F4F2DE;">Browse all jobs</a></li>
+					<li><a href="allFreelancer.php" style="color: #F4F2DE;">Browse Freelancers</a></li>
+					<li><a href="allEmployer.php" style="color: #F4F2DE;">Browse Employers</a></li>
 					<li class="dropdown" style="background:#000;padding:0 20px 0 20px;">
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span> <?php echo $username; ?>
 						</a>
@@ -123,60 +123,61 @@ if (isset($_POST["s_email"])) {
 							<h3>All Freelancer</h3>
 						</div>
 						<div class="panel-body">
-						<table style="width:100%">
-                      <tr>
-                          <td>Username</td>
-                          <td>Name</td>
-                          <td>Professional Title</td>
-                          <td>Email</td>
-                          <td>Skill</td>
-                      </tr>
-                      <?php 
-                      if ($result->num_rows > 0) {
-                            // output data of each row
-                            while($row = $result->fetch_assoc()) {
-                                $f_username=$row["username"];
-                                $Name=$row["Name"];
-                                $prof_title=$row["prof_title"];
-                                $email=$row["email"];
-                                $skills=$row["skills"];
+							<table style="width:100%">
+								<tr>
+									<td>Username</td>
+									<td>Name</td>
+									<td>Professional Title</td>
+									<td>Email</td>
+									<td>Skill</td>
+								</tr>
+								<?php
+								if ($result->num_rows > 0) {
+									// output data of each row
+									while ($row = $result->fetch_assoc()) {
+										$f_username = $row["username"];
+										$Name = $row["Name"];
+										$prof_title = $row["prof_title"];
+										$email = $row["email"];
+										$skills = $row["skills"];
 
-                                echo '
+										echo '
                                 <form action="allFreelancer.php" method="post">
-                                <input type="hidden" name="f_user" value="'.$f_username.'">
+                                <input type="hidden" name="f_user" value="' . $f_username . '">
                                     <tr>
-                                    <td><input type="submit" class="btn btn-link btn-lg" value="'.$f_username.'"></td>
-                                    <td>'.$Name.'</td>
-                                    <td>'.$prof_title.'</td>
-                                    <td>'.$email.'</td>
-                                    <td>'.$skills.'</td>
+                                    <td><input type="submit" class="btn btn-link btn-lg" value="' . $f_username . '"></td>
+                                    <td>' . $Name . '</td>
+                                    <td>' . $prof_title . '</td>
+                                    <td>' . $email . '</td>
+                                    <td>' . $skills . '</td>
                                     </tr>
                                 </form>
                                 ';
+									}
+								} else {
+									echo "<tr></tr><tr><td></td><td>Nothing to show</td></tr>";
+								}
 
-                                }
-                        } else {
-                            echo "<tr></tr><tr><td></td><td>Nothing to show</td></tr>";
-                        }
-
-                       ?>
-                     </table>
+								?>
+							</table>
 							<!-- Card Start  -->
-							<?php foreach ($result as $i => $croom) : $f_username=$croom["username"];?>
-							<form action="allFreelancer.php" method="post">
-							<input type="hidden" name="f_user" value="<?php echo $croom['username'] ?>">
-								<div class="col-md-6 col-lg-3">
-									<div class="single_candidates text-center">
-										<div class="thumb">
-											<img src="image/Corporateicon.png" alt="" width="100" height="100">
+							<?php foreach ($result as $i => $croom) : $f_username = $croom["username"]; ?>
+								<form action="allFreelancer.php" method="post">
+									<input type="hidden" name="f_user" value="<?php echo $croom['username'] ?>">
+									<div class="col-md-6 col-lg-3">
+										<div class="single_candidates text-center">
+											<div class="thumb">
+												<img src="image/Corporateicon.png" alt="" width="100" height="100">
+											</div>
+											<a href="viewFreelancer.php?username=<?php echo $croom['username'] ?>">
+												<h4><?php echo $croom['Name'] ?> </h4>
+											</a>
+											<p1><?php echo $croom['prof_title'] ?></p1><br><br>
+											<p><?php echo $croom['email'] ?><br>Skill: <?php echo $croom['skills'] ?></p><br><br><br>
 										</div>
-										<a href="viewFreelancer.php?username=<?php echo $croom['username'] ?>"><h4><?php echo $croom['Name'] ?> </h4></a>
-										<p1><?php echo $croom['prof_title'] ?></p1><br><br>
-										<p><?php echo $croom['email'] ?><br>Skill: <?php echo $croom['skills'] ?></p><br><br><br>
 									</div>
-								</div>
-							</form>
-							<?php endforeach;?>
+								</form>
+							<?php endforeach; ?>
 							<!-- Card Finish  -->
 						</div>
 					</div>
@@ -232,10 +233,10 @@ if (isset($_POST["s_email"])) {
 		<div class="row">
 			<div class="col-lg-3">
 				<h3>Quick Links</h3>
-				<p><a href="index.php">Home</a></p>
-				<p><a href="allJob.php">Browse all jobs</a></p>
-				<p><a href="allFreelancer.php">Browse Freelancers</a></p>
-				<p><a href="allEmployer.php">Browse Employers</a></p>
+				<p><a href="index.php" style="color: #F4F2DE;">Home</a></p>
+				<p><a href="allJob.php" style="color: #F4F2DE;">Browse all jobs</a></p>
+				<p><a href="allFreelancer.php" style="color: #F4F2DE;">Browse Freelancers</a></p>
+				<p><a href="allEmployer.php" style="color: #F4F2DE;">Browse Employers</a></p>
 			</div>
 			<div class="col-lg-3">
 				<h3>About Us</h3>

@@ -58,7 +58,7 @@ if (isset($_POST["postJob"])) {
 <body>
 
     <!--Navbar menu-->
-    <nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+    <nav class="navbar navbar-fixed-top" id="my-navbar" style="background-color: #7C9D96;">
         <div class="container">
             <div class="navber-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
@@ -67,13 +67,13 @@ if (isset($_POST["postJob"])) {
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="index.php" class="navbar-brand">Freelance Marketplace</a>
+                <a href="index.php" class="navbar-brand" style="color: #F4F2DE;">Freelance Marketplace</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="allJob.php">Browse all jobs</a></li>
-                    <li><a href="allFreelancer.php">Browse Freelancers</a></li>
-                    <li><a href="allEmployer.php">Browse Employers</a></li>
+                    <li><a href="allJob.php" style="color: #F4F2DE;">Browse all jobs</a></li>
+                    <li><a href="allFreelancer.php" style="color: #F4F2DE;">Browse Freelancers</a></li>
+                    <li><a href="allEmployer.php" style="color: #F4F2DE;">Browse Employers</a></li>
                     <li class="dropdown" style="background:#000;padding:0 20px 0 20px;">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span> <?php echo $username; ?>
                         </a>
