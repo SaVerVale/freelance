@@ -18,12 +18,13 @@ if (isset($_SESSION["Username"])) {
 <html>
 
 <head>
-	<title>Freelance Marketplace</title>
+	<title>WorkHubLocal</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css">
 	<link rel="stylesheet" type="text/css" href="awesome/css/fontawesome-all.min.css">
+	<link rel="icon" href="image/whl.png">
 
 	<!-- Delete this -->
 	<!-- <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"><link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css'>
@@ -67,7 +68,7 @@ if (isset($_SESSION["Username"])) {
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<img src="image/ssjmlogo.png" class="navbar-brand"> <a href="index.php" class="navbar-brand" style="color: #F4F2DE;"> Small Scale Job Marketplace</a>
+				<img src="image/whl.png" class="navbar-brand"> <a href="index.php" class="navbar-brand" style="color: #F4F2DE;"> WorkHubLocal</a>
 			</div>
 			<div class="collapse navbar-collapse" id="navbar-collapse">
 				<a href="loginReg.php" class="btn btn-info navbar-btn navbar-right">Register</a>
@@ -123,9 +124,9 @@ if (isset($_SESSION["Username"])) {
 		<div class="col-lg-4">
 			<div class="jumbotron">
 				<div class="container text-center">
-					<h2>Small Scale Job Marketplace</h2>
-					<img src="image/ssjmlogo.png" width="188.16" height="151.68">
-					<p style="text-align: justify;">Unlock a world of local opportunities and take your career to new heights with our Small Scale Job Marketplace, connecting job seekers and freelancers with the best local opportunities for success</p>
+					<h2>WorkHubLocal</h2>
+					<img src="image/whl.png" width="188.16" height="151.68">
+					<p style="text-align: justify;">Unlock a world of local opportunities and take your career to new heights with our WorkHubLocal: Small Scale Job Marketplace, connecting job seekers and freelancers with the best local opportunities for success</p>
 					<a href="loginReg.php" class="btn btn-warning btn-lg">It's Free!! Join Now!!!</a>
 					<p></p>
 					<div class="btn-group">
@@ -389,14 +390,14 @@ if (isset($_SESSION["Username"])) {
 		<div class="btn-group-vertical">
 
 			<button type="button" class="btn btn-custom btn-lg" data-toggle="collapse" data-target="#demo" style="width: 1062px; background-color: #F4F2DE; box-shadow: 2px 2px 4px rgba(0, 0, 0.5, 0.5), 0px 4px 4px rgba(0, 0, 0.5, 0.5);">
-				<h3>What is Freelance Marketplace?</h3>
+				<h3>What is WorkHubLocal?</h3>
 			</button>
 
 
 
 			<div id="demo" class="collapse">
 				<div class="card" style="padding:20px 40px 20px 40px; width: 1062px;  box-shadow: 2px 2px 4px rgba(0, 0, 0.5, 0.5), 0px 4px 4px rgba(0, 0, 0.5, 0.5);">
-					<h4 style="text-align: justify;">Freelance marketplace is an online outsourcing platform that puts employers and businesses in contact with a global network of freelancers. Any member can post a project, whether a short- or long-term job, and choose from skilled freelancers who offer bid proposals with rate for completing the work. It's a mutually beneficial arrangement. <br> <br>Employers can have their pick of thousands of freelancers who have the exact skills needed to get the job done, without undertaking the expense and commitment of hiring full-time employees in person. Freelancers can tap into a readily available source of constant part-time and full-time work opportunities from employers who are specifically seeking them out.</h4>
+					<h4 style="text-align: justify;">WorkHubLocal is an online outsourcing platform that puts employers and businesses in contact with a global network of freelancers. Any member can post a project, whether a short- or long-term job, and choose from skilled freelancers who offer bid proposals with rate for completing the work. It's a mutually beneficial arrangement. <br> <br>Employers can have their pick of thousands of freelancers who have the exact skills needed to get the job done, without undertaking the expense and commitment of hiring full-time employees in person. Freelancers can tap into a readily available source of constant part-time and full-time work opportunities from employers who are specifically seeking them out.</h4>
 				</div>
 			</div>
 
@@ -430,7 +431,7 @@ if (isset($_SESSION["Username"])) {
 
 			<div id="demo3" class="collapse">
 				<div class="card" style="padding:20px 40px 20px 40px; width: 1062px;  box-shadow: 2px 2px 4px rgba(0, 0, 0.5, 0.5), 0px 4px 4px rgba(0, 0, 0.5, 0.5);">
-					<h4 style="text-align: justify;">No. Freelance marketplace is absolutely free to register and explore the posted job offers, freelancers and employers.</h4>
+					<h4 style="text-align: justify;">No. WorkHubLocal is absolutely free to register and explore the posted job offers, freelancers and employers.</h4>
 				</div>
 			</div>
 		</div>
@@ -451,16 +452,16 @@ if (isset($_SESSION["Username"])) {
 			</div>
 			<div class="col-lg-3">
 				<h3 style="color: #F4F2DE;">About Us</h3>
-				<p style="color: #E9B384;">Rahamat-E-Elahi, CUET ID-1304054</p>
-				<p style="color: #E9B384;">Shovagata Sarker Borno, CUET ID-1304041</p>
-				<p style="color: #E9B384;">Md. Sharifullah, CUET ID-1304049</p>
-				<p style="color: #E9B384;">&copy 2018</p>
+				<p style="color: #E9B384;">Valenciano, Samuel Vernon E.</p>
+				<p style="color: #E9B384;">Gimeno, Sharmaine Mae B.</p>
+				<p style="color: #E9B384;">BSIT 3-3 2023</p>
+				<p style="color: #E9B384;">&copy 2023</p>
 			</div>
 			<div class="col-lg-3">
 				<h3 style="color: #F4F2DE;">Contact Us</h3>
-				<p style="color: #E9B384;">Chittagong University of Engineering and Technology</p>
-				<p style="color: #E9B384;">Chittagong, Bangladesh</p>
-				<p style="color: #E9B384;">&copy CUET 2018</p>
+				<p style="color: #E9B384;">Polytechnic University of the Philippines</p>
+				<p style="color: #E9B384;">Sta. Mesa, Manila, Philippines</p>
+				<p style="color: #E9B384;">&copy 2023</p>
 			</div>
 			<div class="col-lg-3">
 				<h3>Social Contact</h3>

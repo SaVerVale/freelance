@@ -6,12 +6,13 @@
 <html>
 
 <head>
-    <title>Freelance Marketplace</title>
+    <title>WorkHubLocal</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css">
     <link rel="stylesheet" type="text/css" href="dist/css/bootstrapValidator.css">
+    <link rel="icon" href="image/whl.png">
 
     <style>
         body {
@@ -49,7 +50,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="index.php" class="navbar-brand" style="color: #F4F2DE;">Freelance Marketplace</a>
+                <img src="image/whl.png" class="navbar-brand"><a href="index.php" class="navbar-brand" style="color: #F4F2DE;">WorkHubLocal</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <a href="loginReg.php" class="btn btn-info navbar-btn navbar-right" data-toggle="modal" data-target="#registerModal">Register</a>
@@ -237,16 +238,16 @@
             </div>
             <div class=" col-lg-3">
                 <h3 style="color: #F4F2DE;">About Us</h3>
-                <p style="color: #E9B384;">Rahamat-E-Elahi, CUET ID-1304054</p>
-                <p style="color: #E9B384;">Shovagata Sarker Borno, CUET ID-1304041</p>
-                <p style="color: #E9B384;">Md. Sharifullah, CUET ID-1304049</p>
-                <p style="color: #E9B384;">&copy 2018</p>
+				<p style="color: #E9B384;">Valenciano, Samuel Vernon E.</p>
+				<p style="color: #E9B384;">Gimeno, Sharmaine Mae B.</p>
+				<p style="color: #E9B384;">BSIT 3-3 2023</p>
+				<p style="color: #E9B384;">&copy 2023</p>
             </div>
             <div class="col-lg-3">
                 <h3 style="color: #F4F2DE;">Contact Us</h3>
-                <p style="color: #E9B384;">Chittagong University of Engineering and Technology</p>
-                <p style="color: #E9B384;">Chittagong, Bangladesh</p>
-                <p style="color: #E9B384;">&copy CUET 2018</p>
+				<p style="color: #E9B384;">Polytechnic University of the Philippines</p>
+				<p style="color: #E9B384;">Sta. Mesa, Manila, Philippines</p>
+				<p style="color: #E9B384;">&copy 2023</p>
             </div>
             <div class="col-lg-3">
                 <h3 style="color: #F4F2DE;">Social Contact</h3>
