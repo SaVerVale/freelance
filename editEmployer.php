@@ -59,6 +59,7 @@ if (isset($_POST["editEmployer"])) {
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css">
     <link rel="stylesheet" type="text/css" href="awesome/css/fontawesome-all.min.css">
     <link rel="stylesheet" type="text/css" href="dist/css/bootstrapValidator.css">
+    <link rel="icon" href="image/whl.png">
 
     <style>
         body {
@@ -86,13 +87,13 @@ if (isset($_POST["editEmployer"])) {
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="index.php" class="navbar-brand" style="color: #F4F2DE;">Freelance Marketplace</a>
+                <img src="image/whl.png" class="navbar-brand"><a href="index.php" class="navbar-brand" style="color: #F4F2DE;">WorkHubLocal</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#" style="color: #F4F2DE;">Browse all jobs</a></li>
-                    <li><a href="#how" style="color: #F4F2DE;">Browse Freelancers</a></li>
-                    <li><a href="#faq" style="color: #F4F2DE;">Browse Employers</a></li>
+                    <li><a href="allJob.php" style="color: #F4F2DE;">Browse all jobs</a></li>
+					<li><a href="allFreelancer.php" style="color: #F4F2DE;">Browse Freelancers</a></li>
+					<li><a href="allEmployer.php" style="color: #F4F2DE;">Browse Employers</a></li>
                     <li class="dropdown" style="background:#000;padding:0 20px 0 20px;">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span> <?php echo $username; ?>
                         </a>
@@ -212,17 +213,16 @@ if (isset($_POST["editEmployer"])) {
             </div>
             <div class="col-lg-3">
                 <h3 style="color: #F4F2DE;">About Us</h3>
-
-                <p style="color: #E9B384;">Rahamat-E-Elahi, CUET ID-1304054</p>
-                <p style="color: #E9B384;">Shovagata Sarker Borno, CUET ID-1304041</p>
-                <p style="color: #E9B384;">Md. Sharifullah, CUET ID-1304049</p>
-                <p style="color: #E9B384;">&copy 2018</p>
+				<p style="color: #E9B384;">Valenciano, Samuel Vernon E.</p>
+				<p style="color: #E9B384;">Gimeno, Sharmaine Mae B.</p>
+				<p style="color: #E9B384;">BSIT 3-3 2023</p>
+				<p style="color: #E9B384;">&copy 2023</p>
             </div>
             <div class="col-lg-3">
                 <h3 style="color: #F4F2DE;">Contact Us</h3>
-                <p style="color: #E9B384;">Chittagong University of Engineering and Technology</p>
-                <p style="color: #E9B384;">Chittagong, Bangladesh</p>
-                <p style="color: #E9B384;">&copy CUET 2018</p>
+				<p style="color: #E9B384;">Polytechnic University of the Philippines</p>
+				<p style="color: #E9B384;">Sta. Mesa, Manila, Philippines</p>
+				<p style="color: #E9B384;">&copy 2023</p>
             </div>
             <div class="col-lg-3">
                 <h3 style="color: #F4F2DE;"> Social Contact</h3>
